@@ -1,0 +1,140 @@
+scoreboard players reset @a
+tag @e remove newcheck
+tag @e remove final
+gamerule doImmediateRespawn true
+clear @a
+weather clear
+time set 10000
+scoreboard players set @a done 0
+scoreboard players set @a score 0
+scoreboard players set @a temp 0
+scoreboard players set Round rounds 1
+gamerule announceAdvancements true
+kill @e[type=armor_stand]
+summon minecraft:armor_stand 0 330 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["score","newcheck"]}
+team join a @a
+advancement revoke @a everything
+effect clear @a
+kill @a
+tag @a remove a
+execute as @a at @s run playsound minecraft:block.trial_spawner.ominous_activate
+title @a title {"text":"game starting!","color":"green"}
+schedule function a:zzzstart1 20t
+schedule function a:zzzcheck 6t
+schedule function a:zzzcheck1 10t
+gamemode survival @a
+scoreboard players set @e[type=armor_stand,tag=score,limit=1] two 2
+scoreboard players set @e[type=armor_stand,tag=score,limit=1] ex 1
+
+execute unless score Time mode matches 1..3 run function a:zzznomode
+
+
+# give bonus items
+schedule function a:zzzd2bonus 120t
+
+
+
+
+
+# death check!
+scoreboard players set @a aa 17
+scoreboard players set @a ab 17
+scoreboard players set @a ac 17
+scoreboard players set @a ad 17
+scoreboard players set @a ae 17
+scoreboard players set @a af 17
+scoreboard players set @a ag 17
+scoreboard players set @a ah 17
+scoreboard players set @a ai 17
+scoreboard players set @a aj 17
+scoreboard players set @a ak 17
+scoreboard players set @a al 17
+scoreboard players set @a am 17
+scoreboard players set @a an 17
+scoreboard players set @a ao 17
+scoreboard players set @a ap 17
+scoreboard players set @a aq 17
+scoreboard players set @a ar 17
+scoreboard players set @a as 17
+scoreboard players set @a at 17
+scoreboard players set @a au 17
+scoreboard players set @a av 17
+scoreboard players set @a aw 17
+scoreboard players set @a ax 17
+scoreboard players set @a ay 17
+scoreboard players set @a az 17
+scoreboard players set @a ba 17
+scoreboard players set @a bb 17
+scoreboard players set @a bc 17
+scoreboard players set @a bd 17
+scoreboard players set @a be 17
+scoreboard players set @a bf 17
+scoreboard players set @a bg 17
+scoreboard players set @a bh 17
+scoreboard players set @a bi 17
+scoreboard players set @a bj 17
+scoreboard players set @a bk 17
+scoreboard players set @a bl 17
+scoreboard players set @a bm 17
+scoreboard players set @a bn 17
+scoreboard players set @a bo 17
+scoreboard players set @a bp 17
+scoreboard players set @a bq 17
+scoreboard players set @a br 17
+scoreboard players set @a bs 17
+scoreboard players set @a bt 17
+scoreboard players set @a bu 17
+scoreboard players set @a bv 17
+scoreboard players set @a bw 17
+scoreboard players set @a bx 17
+
+scoreboard players set @e[type=armor_stand,tag=score] aa 17
+scoreboard players set @e[type=armor_stand,tag=score] ab 17
+scoreboard players set @e[type=armor_stand,tag=score] ac 17
+scoreboard players set @e[type=armor_stand,tag=score] ad 17
+scoreboard players set @e[type=armor_stand,tag=score] ae 17
+scoreboard players set @e[type=armor_stand,tag=score] af 17
+scoreboard players set @e[type=armor_stand,tag=score] ag 17
+scoreboard players set @e[type=armor_stand,tag=score] ah 17
+scoreboard players set @e[type=armor_stand,tag=score] ai 17
+scoreboard players set @e[type=armor_stand,tag=score] aj 17
+scoreboard players set @e[type=armor_stand,tag=score] ak 17
+scoreboard players set @e[type=armor_stand,tag=score] al 17
+scoreboard players set @e[type=armor_stand,tag=score] am 17
+scoreboard players set @e[type=armor_stand,tag=score] an 17
+scoreboard players set @e[type=armor_stand,tag=score] ao 17
+scoreboard players set @e[type=armor_stand,tag=score] ap 17
+scoreboard players set @e[type=armor_stand,tag=score] aq 17
+scoreboard players set @e[type=armor_stand,tag=score] ar 17
+scoreboard players set @e[type=armor_stand,tag=score] as 17
+scoreboard players set @e[type=armor_stand,tag=score] at 17
+scoreboard players set @e[type=armor_stand,tag=score] au 17
+scoreboard players set @e[type=armor_stand,tag=score] av 17
+scoreboard players set @e[type=armor_stand,tag=score] aw 17
+scoreboard players set @e[type=armor_stand,tag=score] ax 17
+scoreboard players set @e[type=armor_stand,tag=score] ay 17
+scoreboard players set @e[type=armor_stand,tag=score] az 17
+scoreboard players set @e[type=armor_stand,tag=score] ba 17
+scoreboard players set @e[type=armor_stand,tag=score] bb 17
+scoreboard players set @e[type=armor_stand,tag=score] bc 17
+scoreboard players set @e[type=armor_stand,tag=score] bd 17
+scoreboard players set @e[type=armor_stand,tag=score] be 17
+scoreboard players set @e[type=armor_stand,tag=score] bf 17
+scoreboard players set @e[type=armor_stand,tag=score] bg 17
+scoreboard players set @e[type=armor_stand,tag=score] bh 17
+scoreboard players set @e[type=armor_stand,tag=score] bi 17
+scoreboard players set @e[type=armor_stand,tag=score] bj 17
+scoreboard players set @e[type=armor_stand,tag=score] bk 17
+scoreboard players set @e[type=armor_stand,tag=score] bl 17
+scoreboard players set @e[type=armor_stand,tag=score] bm 17
+scoreboard players set @e[type=armor_stand,tag=score] bn 17
+scoreboard players set @e[type=armor_stand,tag=score] bo 17
+scoreboard players set @e[type=armor_stand,tag=score] bp 17
+scoreboard players set @e[type=armor_stand,tag=score] bq 17
+scoreboard players set @e[type=armor_stand,tag=score] br 17
+scoreboard players set @e[type=armor_stand,tag=score] bs 17
+scoreboard players set @e[type=armor_stand,tag=score] bt 17
+scoreboard players set @e[type=armor_stand,tag=score] bu 17
+scoreboard players set @e[type=armor_stand,tag=score] bv 17
+scoreboard players set @e[type=armor_stand,tag=score] bw 17
+scoreboard players set @e[type=armor_stand,tag=score] bx 17
