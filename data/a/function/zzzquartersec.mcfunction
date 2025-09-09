@@ -2,17 +2,52 @@
 gamemode spectator @a[scores={zzzforefit=1..},tag=!a]
 execute as @a[scores={zzzforefit=1..},tag=!a] run tellraw @a [{"selector":"@s","color":"dark_red"},{"text":" has forfeited."}]
 execute if entity @a[scores={zzzforefit=1..},tag=!a] run execute as @a at @s run playsound minecraft:block.pointed_dripstone.land
-execute as @a[scores={zzzforefit=1..},tag=!a] run execute unless entity @a[gamemode=survival,scores={done=..2,score=1..}] run schedule function a:zzzfinalprint 1s
+execute as @a[scores={zzzforefit=1..},tag=!a] run execute unless entity @a[gamemode=survival,scores={score=1..}] run schedule function a:zzzfinalprint 1s
 tag @a[scores={zzzforefit=1..},tag=!a] add a
 
 execute as @a[scores={mode=1}] run scoreboard players set Time mode 1
 execute as @a[scores={mode=2}] run scoreboard players set Time mode 2
 execute as @a[scores={mode=3}] run scoreboard players set Time mode 3
-execute as @a[scores={mode=..-1}] run tellraw @s {"color":"dark_red","text":"That is not a valid mode value! As a reminder, 1 is a game to 50, 2 is a game to 75, and 3 is a game to 100!"}
-execute as @a[scores={mode=1}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 50 points!"}
-execute as @a[scores={mode=2}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 75 points!"}
-execute as @a[scores={mode=3}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 100 points!"}
-execute as @a[scores={mode=4..}] run tellraw @s {"color":"dark_red","text":"That is not a valid mode value! As a reminder, 1 is a game to 50, 2 is a game to 75, and 3 is a game to 100!"}
+execute as @a[scores={mode=4}] run scoreboard players set Time mode 4
+execute as @a[scores={mode=5}] run scoreboard players set Time mode 5
+execute as @a[scores={mode=6}] run scoreboard players set Time mode 6
+execute as @a[scores={mode=7}] run scoreboard players set Time mode 7
+execute as @a[scores={mode=8}] run scoreboard players set Time mode 8
+execute as @a[scores={mode=9}] run scoreboard players set Time mode 9
+execute as @a[scores={mode=10}] run scoreboard players set Time mode 10
+execute as @a[scores={mode=11}] run scoreboard players set Time mode 11
+execute as @a[scores={mode=12}] run scoreboard players set Time mode 12
+execute as @a[scores={mode=13}] run scoreboard players set Time mode 13
+execute as @a[scores={mode=14}] run scoreboard players set Time mode 14
+execute as @a[scores={mode=15}] run scoreboard players set Time mode 15
+execute as @a[scores={mode=16}] run scoreboard players set Time mode 16
+execute as @a[scores={mode=17}] run scoreboard players set Time mode 17
+execute as @a[scores={mode=18}] run scoreboard players set Time mode 18
+execute as @a[scores={mode=19}] run scoreboard players set Time mode 19
+execute as @a[scores={mode=20}] run scoreboard players set Time mode 20
+
+execute as @a[scores={mode=..-1}] run tellraw @s {"color":"dark_red","text":"That is not a valid mode value! As a reminder, the mode value times 10 is the target score for the game!"}
+execute as @a[scores={mode=1}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 10 points!"}
+execute as @a[scores={mode=2}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 20 points!"}
+execute as @a[scores={mode=3}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 30 points!"}
+execute as @a[scores={mode=4}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 40 points!"}
+execute as @a[scores={mode=5}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 50 points!"}
+execute as @a[scores={mode=6}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 60 points!"}
+execute as @a[scores={mode=7}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 70 points!"}
+execute as @a[scores={mode=8}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 80 points!"}
+execute as @a[scores={mode=9}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 90 points!"}
+execute as @a[scores={mode=10}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 100 points!"}
+execute as @a[scores={mode=11}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 110 points!"}
+execute as @a[scores={mode=12}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 120 points!"}
+execute as @a[scores={mode=13}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 130 points!"}
+execute as @a[scores={mode=14}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 140 points!"}
+execute as @a[scores={mode=15}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 150 points!"}
+execute as @a[scores={mode=16}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 160 points!"}
+execute as @a[scores={mode=17}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 170 points!"}
+execute as @a[scores={mode=18}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 180 points!"}
+execute as @a[scores={mode=19}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 190 points!"}
+execute as @a[scores={mode=20}] run tellraw @a {"color":"dark_green","text":"The game has been set to a game to 200 points!"}
+execute as @a[scores={mode=21..}] run tellraw @s {"color":"dark_red","text":"That is not a valid mode value! As a reminder, the mode value times 10 is the target score for the game!"}
 
 
 scoreboard players reset @a zzzforefit
@@ -25,18 +60,51 @@ execute positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=.
 # when a player finishes
 execute as @a[scores={death=18..},gamemode=survival] run function a:zzzdeathcheck
 
+execute as @e[type=armor_stand,tag=score,scores={mode=1}] run execute as @a[scores={score=10..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=2}] run execute as @a[scores={score=20..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=3}] run execute as @a[scores={score=30..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=4}] run execute as @a[scores={score=40..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=5}] run execute as @a[scores={score=50..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=6}] run execute as @a[scores={score=60..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=7}] run execute as @a[scores={score=70..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=8}] run execute as @a[scores={score=80..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=9}] run execute as @a[scores={score=90..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=10}] run execute as @a[scores={score=100..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=11}] run execute as @a[scores={score=110..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=12}] run execute as @a[scores={score=120..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=13}] run execute as @a[scores={score=130..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=14}] run execute as @a[scores={score=140..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=15}] run execute as @a[scores={score=150..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=16}] run execute as @a[scores={score=160..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=17}] run execute as @a[scores={score=170..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=18}] run execute as @a[scores={score=180..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=19}] run execute as @a[scores={score=190..}] run scoreboard players set @s done 3
+execute as @e[type=armor_stand,tag=score,scores={mode=20}] run execute as @a[scores={score=200..}] run scoreboard players set @s done 3
+
 execute as @a[scores={done=3..},tag=!a] at @s run playsound minecraft:ui.toast.challenge_complete
 execute as @a[scores={done=3..},tag=!a] run scoreboard players add @e[type=armor_stand,tag=score] place 1
 
 
 # 	placement points
 execute as @e[type=armor_stand,tag=score,scores={place=1}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"aqua","bold":true,"selector":"@s"},{"bold":false,"text":" has finished in 1st place!"}]
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 5
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 5 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 4
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 4 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 3
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 3 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=16..}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 15
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=16..}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 15 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=13..15}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 13
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=13..15}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 13 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=10..12}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 10
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=10..12}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 10 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=8..9}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 8
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=8..9}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 8 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=6..7}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 7
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=6..7}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 7 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=4..5}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 5
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=4..5}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 5 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 3
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 3 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 2
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 2 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 1
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 1 minute to try and finish before the game ends!","color":"dark_green","bold":true}
 execute as @e[type=armor_stand,tag=score,scores={place=1}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set @e[tag=score,type=armor_stand] cd 1
 
 execute as @e[type=armor_stand,tag=score,scores={place=2}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"aqua","bold":true,"selector":"@s"},{"bold":false,"text":" has finished in 2nd place!"}]
@@ -47,19 +115,8 @@ execute as @e[type=armor_stand,tag=score,scores={place=3}] run execute as @a[sco
 # 	rest of the stuff
 gamemode spectator @a[scores={done=3..},tag=!a]
 tag @a[scores={done=3..},tag=!a] add a
-execute as @a[scores={done=3}] run execute unless entity @a[gamemode=survival,scores={done=..2,score=1..}] run schedule function a:zzzfinalprint 1s
+execute as @a[scores={done=3}] run execute unless entity @a[gamemode=survival,scores={score=1..}] run schedule function a:zzzfinalprint 1s
 execute as @a[scores={done=3}] run scoreboard players set @s done 4
-
-# make ending screen
-#execute as @e[tag=score,scores={ex=1,scoretick=10000..10010}] run function a:zzzend1
-#execute as @e[tag=score,scores={ex=2,scoretick=7000..7010}] run function a:zzzend2
-#execute as @e[tag=score,scores={ex=3,scoretick=4000..4010}] run function a:zzzend3
-#execute as @e[tag=score,scores={ex=5,scoretick=2000..2010}] run function a:zzzend5
-
-
-# seed check
-execute positioned 12.79 308.35 0.70 as @a[distance=..30] run function a:zzzseedcheck
-
 
 schedule function a:zzzquartersec 2t
 

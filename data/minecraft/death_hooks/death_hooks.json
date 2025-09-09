@@ -198,5 +198,29 @@
   {
     "name": "bx",
     "untranslated_regex": "death.fell.assist"
+  },
+    {
+    "name": "by",
+    "untranslated_regex": "death.attack.outOfWorld"
+  },
+  {
+    "name": "bz",
+    "untranslated_regex": "death.attack.arrow.item"
+  },
+  {
+    "name": "ca",
+    "untranslated_regex": "death.attack.mob.item"
+  },
+  {
+    "name": "cb",
+    "untranslated_regex": "death.fell.assist.item"
+  },
+  {
+    "name": "cc",
+    "untranslated_regex": "death.attack.fireworks.item"
+  },
+  {
+    "name": "cd",
+    "untranslated_regex": "death.attack.explosion.player.item"
   }
 ]

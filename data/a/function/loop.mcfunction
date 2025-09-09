@@ -23,14 +23,15 @@ execute if score Time scoretick matches ..0 run scoreboard players remove Time s
 execute if score Time scoretick matches ..0 run scoreboard players set Time scoretick 20
 execute if score Time sec matches ..-1 run scoreboard players remove Time min 1
 execute if score Time sec matches ..-1 run scoreboard players set Time sec 59
-execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches ..29 run title @a actionbar [{"color":"black","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 30.. run title @a actionbar [{"color":"dark_gray","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 1 run execute if score Time sec matches ..29 run title @a actionbar [{"color":"dark_red","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 1 run execute if score Time sec matches 30.. run title @a actionbar [{"color":"red","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 2 run execute if score Time sec matches ..29 run title @a actionbar [{"color":"gold","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 2 run execute if score Time sec matches 30.. run title @a actionbar [{"color":"yellow","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 3 run title @a actionbar  [{"color":"green","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
-execute if score Time scoretick matches 19 run execute if score Time min matches 4 run title @a actionbar  [{"color":"aqua","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+
+execute if score Time scoretick matches 19 run execute if score Time min matches 0 run title @a actionbar [{"color":"black","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 1 run title @a actionbar [{"color":"dark_gray","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 2 run title @a actionbar [{"color":"dark_red","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 3 run title @a actionbar [{"color":"red","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 4 run title @a actionbar [{"color":"gold","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 5..6 run title @a actionbar [{"color":"yellow","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 7..9 run title @a actionbar [{"color":"green","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
+execute if score Time scoretick matches 19 run execute if score Time min matches 10..15 run title @a actionbar [{"color":"aqua","text":"Time remaining: "},{"score":{"name":"Time","objective":"min"}},{"text":" min "},{"score":{"name":"Time","objective":"sec"}},{"text":" sec"}]
 
 
 execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 1 run tellraw @a {"text":"1 second left!","color":"dark_red"}
@@ -43,12 +44,16 @@ execute if score Time scoretick matches 19 run execute if score Time min matches
 execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 8 run tellraw @a {"text":"8 seconds left!","color":"dark_red"}
 execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 9 run tellraw @a {"text":"9 seconds left!","color":"dark_red"}
 execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 10 run tellraw @a {"text":"10 seconds left!","color":"dark_red"}
-execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 15 run tellraw @a {"text":"15 seconds left!","color":"red"}
-execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 30 run tellraw @a {"text":"30 seconds left!","color":"red"}
-execute if score Time scoretick matches 19 run execute if score Time min matches 1 run execute if score Time sec matches 0 run tellraw @a {"text":"1 minute left!","color":"gold"}
-execute if score Time scoretick matches 19 run execute if score Time min matches 2 run execute if score Time sec matches 0 run tellraw @a {"text":"2 minutes left!","color":"yellow"}
-execute if score Time scoretick matches 19 run execute if score Time min matches 3 run execute if score Time sec matches 0 run tellraw @a {"text":"3 minutes left!","color":"green"}
-execute if score Time scoretick matches 19 run execute if score Time min matches 4 run execute if score Time sec matches 0 run tellraw @a {"text":"4 minutes left!","color":"aqua"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 15 run tellraw @a {"text":"15 seconds left!","color":"dark_red"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 30 run tellraw @a {"text":"30 seconds left!","color":"dark_red"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 1 run execute if score Time sec matches 0 run tellraw @a {"text":"1 minute left!","color":"red"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 2 run execute if score Time sec matches 0 run tellraw @a {"text":"2 minutes left!","color":"gold"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 3 run execute if score Time sec matches 0 run tellraw @a {"text":"3 minutes left!","color":"gold"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 4 run execute if score Time sec matches 0 run tellraw @a {"text":"4 minutes left!","color":"yellow"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 5 run execute if score Time sec matches 0 run tellraw @a {"text":"5 minutes left!","color":"yellow"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 7 run execute if score Time sec matches 0 run tellraw @a {"text":"7 minutes left!","color":"green"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 10 run execute if score Time sec matches 0 run tellraw @a {"text":"10 minutes left!","color":"aqua"}
+execute if score Time scoretick matches 19 run execute if score Time min matches 13 run execute if score Time sec matches 0 run tellraw @a {"text":"13 minutes left!","color":"aqua"}
 
 
 execute if score Time scoretick matches 19 run execute if score Time min matches 0 run execute if score Time sec matches 1 run execute as @a at @s run playsound minecraft:block.note_block.bit
@@ -67,15 +72,15 @@ execute if score Time scoretick matches 19 run execute if score Time min matches
 execute if score Time scoretick matches 19 run execute if score Time min matches 2 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
 execute if score Time scoretick matches 19 run execute if score Time min matches 3 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
 execute if score Time scoretick matches 19 run execute if score Time min matches 4 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
+execute if score Time scoretick matches 19 run execute if score Time min matches 5 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
+execute if score Time scoretick matches 19 run execute if score Time min matches 7 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
+execute if score Time scoretick matches 19 run execute if score Time min matches 10 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
+execute if score Time scoretick matches 19 run execute if score Time min matches 13 run execute if score Time sec matches 0 run execute as @a at @s run playsound minecraft:block.note_block.bit
 
 
 execute as @e[type=armor_stand,scores={scoretick=0..10}] at @a run fill ~-3 ~-3 ~-3 ~3 ~3 ~3 air replace glass
 tag @a[tag=!new] add new
 team join a @a[tag=!new]
-
-
-# round is over calculations
-# execute as @a[scores={done=3..}] run execute unless entity @a[gamemode=survival,scores={done=..2,score=1..}] run function a:zzzdone
 
 
 # powerup
@@ -90,14 +95,6 @@ scoreboard players enable @a unique
 
 
 # player timer 
-
-# timers
-#execute as @e[tag=score,scores={round=1,scoretick=9900..}] run scoreboard players set @s scoretick 10
-#execute as @e[tag=score,scores={round=1,ex=1,scoretick=0..}] run function a:zzzex1
-#execute as @e[tag=score,scores={round=1,ex=2,scoretick=0..}] run function a:zzzex2
-#execute as @e[tag=score,scores={round=1,ex=3,scoretick=0..}] run function a:zzzex3
-#execute as @e[tag=score,scores={round=1,ex=5,scoretick=0..}] run function a:zzzex5
-
 # pre round timer
 execute as @e[tag=score,scores={round=1,scoretick=-200}] run title @a title {"text":"10","color":"green"}
 execute as @e[tag=score,scores={round=1,scoretick=-180}] run title @a title {"text":"9","color":"green"}

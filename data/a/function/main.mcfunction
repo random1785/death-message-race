@@ -22,6 +22,7 @@ scoreboard objectives add lobby dummy
 scoreboard objectives add score dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add damage dummy
+scoreboard objectives add done dummy
 scoreboard objectives add message dummy
 scoreboard objectives add overkill dummy
 scoreboard objectives add repeat trigger
@@ -78,18 +79,11 @@ scoreboard players set @e[type=armor_stand,tag=score] round 0
 schedule clear a:zzzstart
 schedule clear a:zzzstart1
 schedule clear a:zzzstart2
-schedule clear a:zzzscorecalc1
-schedule clear a:zzzscorecalc2
-schedule clear a:zzzscorecalc3
 schedule clear a:zzzquartersec
 schedule clear a:zzzd2bonus
 schedule clear a:zzzfinalprint
 
 function a:zzzquartersec
-
-
-schedule function a:zzzseedcheck 2t
-scoreboard objectives add check dummy
 
 
 scoreboard objectives remove aa
@@ -142,3 +136,9 @@ scoreboard objectives remove bu
 scoreboard objectives remove bv
 scoreboard objectives remove bw
 scoreboard objectives remove bx
+scoreboard objectives remove by
+scoreboard objectives remove bz
+scoreboard objectives remove ca
+scoreboard objectives remove cb
+scoreboard objectives remove cc
+scoreboard objectives remove cd

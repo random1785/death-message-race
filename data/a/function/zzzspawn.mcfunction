@@ -61,6 +61,12 @@ scoreboard objectives add bu bu
 scoreboard objectives add bv bv
 scoreboard objectives add bw bw
 scoreboard objectives add bx bx
+scoreboard objectives add by by
+scoreboard objectives add bz bz
+scoreboard objectives add ca ca
+scoreboard objectives add cb cb
+scoreboard objectives add cc cc
+scoreboard objectives add cd cd
 
 
 scoreboard players set @e[type=armor_stand,tag=score] aa 17
@@ -113,3 +119,9 @@ scoreboard players set @e[type=armor_stand,tag=score] bu 17
 scoreboard players set @e[type=armor_stand,tag=score] bv 17
 scoreboard players set @e[type=armor_stand,tag=score] bw 17
 scoreboard players set @e[type=armor_stand,tag=score] bx 17
+scoreboard players set @e[type=armor_stand,tag=score] by 17
+scoreboard players set @e[type=armor_stand,tag=score] bz 17
+scoreboard players set @e[type=armor_stand,tag=score] ca 17
+scoreboard players set @e[type=armor_stand,tag=score] cb 17
+scoreboard players set @e[type=armor_stand,tag=score] cc 17
+scoreboard players set @e[type=armor_stand,tag=score] cd 17

@@ -26,13 +26,15 @@ gamemode survival @a
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] two 2
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] ex 1
 
-execute unless score Time mode matches 1..3 run function a:zzznomode
+execute unless score Time mode matches 1..20 run function a:zzznomode
 
 
 # give bonus items
 schedule function a:zzzd2bonus 120t
 
 
+
+gamerule announceAdvancements false
 
 
 
@@ -87,6 +89,12 @@ scoreboard players set @a bu 17
 scoreboard players set @a bv 17
 scoreboard players set @a bw 17
 scoreboard players set @a bx 17
+scoreboard players set @a by 17
+scoreboard players set @a bz 17
+scoreboard players set @a ca 17
+scoreboard players set @a cb 17
+scoreboard players set @a cc 17
+scoreboard players set @a cd 17
 
 scoreboard players set @e[type=armor_stand,tag=score] aa 17
 scoreboard players set @e[type=armor_stand,tag=score] ab 17
@@ -138,3 +146,9 @@ scoreboard players set @e[type=armor_stand,tag=score] bu 17
 scoreboard players set @e[type=armor_stand,tag=score] bv 17
 scoreboard players set @e[type=armor_stand,tag=score] bw 17
 scoreboard players set @e[type=armor_stand,tag=score] bx 17
+scoreboard players set @e[type=armor_stand,tag=score] by 17
+scoreboard players set @e[type=armor_stand,tag=score] bz 17
+scoreboard players set @e[type=armor_stand,tag=score] ca 17
+scoreboard players set @e[type=armor_stand,tag=score] cb 17
+scoreboard players set @e[type=armor_stand,tag=score] cc 17
+scoreboard players set @e[type=armor_stand,tag=score] cd 17

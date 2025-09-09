@@ -48,3 +48,77 @@
 (2)bv: "death.fell.accident.water": "death.fell.accident.water",
 (1)bw: "death.fell.killer": "%1$s was doomed to fall",
 (1)bx: "death.fell.assist": "%1$s was doomed to fall by %2$s",
+(3)bz: "death.attack.arrow.item": "%1$s was shot by %2$s using %3$s",
+(3)ca: "death.attack.mob.item": "%1$s was slain by %2$s using %3$s",
+(3)cb: "death.fell.assist.item": "%1$s was doomed to fall by %2$s using %3$s",
+(3)cc: "death.attack.fireworks.item": "%1$s went off with a bang due to a firework fired from %3$s by %2$s",
+(3)cd: "death.attack.explosion.player.item": "%1$s was blown up by %2$s using %3$s",
+
+
+
+7 "death.attack.anvil": "%1$s was squashed by a falling anvil",
+2 "death.attack.arrow": "%1$s was shot by %2$s",
+5 "death.attack.badRespawnPoint": "%1$s was killed by [Intentional Game Design]",
+2 "death.attack.cactus": "%1$s was pricked to death",
+3 "death.attack.cactus.player": "%1$s walked into a cactus while trying to escape %2$s",
+
+7 "death.attack.cramming": "%1$s was squished too much",
+9 "death.attack.cramming.player": "%1$s was squashed by %2$s",
+1 "death.attack.drown": "%1$s drowned",
+3 "death.attack.drown.player": "%1$s drowned while trying to escape %2$s",
+4 "death.attack.explosion": "%1$s blew up",
+
+2 "death.attack.explosion.player": "%1$s was blown up by %2$s",
+2 "death.attack.fall": "%1$s hit the ground too hard",
+3 "death.attack.fall.player": "%1$s hit the ground too hard while trying to escape %2$s",
+2 "death.attack.fallingStalactite": "%1$s was skewered by a falling stalactite",
+7 "death.attack.fireball": "%1$s was fireballed by %2$s",
+
+6 "death.attack.fireworks": "%1$s went off with a bang",
+2 "death.attack.freeze": "%1$s froze to death",
+5 "death.attack.freeze.player": "%1$s was frozen to death by %2$s",
+2 "death.attack.hotFloor": "%1$s discovered the floor was lava",
+3 "death.attack.hotFloor.player": "%1$s walked into the danger zone due to %2$s",
+
+2 "death.attack.inFire": "%1$s went up in flames",
+3 "death.attack.inFire.player": "%1$s walked into fire while fighting %2$s",
+1 "death.attack.inWall": "%1$s suffocated in a wall",
+3 "death.attack.inWall.player": "%1$s suffocated in a wall while fighting %2$s",
+2 "death.attack.indirectMagic": "%1$s was killed by %2$s using magic",
+
+2 "death.attack.lava": "%1$s tried to swim in lava",
+3 "death.attack.lava.player": "%1$s tried to swim in lava to escape %2$s",
+2 "death.attack.mob": "%1$s was slain by %2$s",
+2 "death.attack.onFire": "%1$s burned to death",
+4 "death.attack.onFire.player": "%1$s was burned to a crisp while fighting %2$s",
+
+8 "death.attack.sonic_boom": "%1$s was obliterated by a sonically-charged shriek",
+2 "death.attack.stalagmite": "%1$s was impaled on a stalagmite",
+3 "death.attack.stalagmite.player": "%1$s was impaled on a stalagmite while fighting %2$s",
+3 "death.attack.sting": "%1$s was stung to death",
+2 "death.attack.sweetBerryBush": "%1$s was poked to death by a sweet berry bush",
+
+4 "death.attack.sweetBerryBush.player": "%1$s was poked to death by a sweet berry bush while trying to escape %2$s",
+2 "death.attack.thorns": "%1$s was killed while trying to hurt %2$s",
+2 "death.attack.trident": "%1$s was impaled by %2$s",
+6 "death.attack.wither": "%1$s withered away",
+5 "death.attack.wither.player": "%1$s withered away while fighting %2$s",
+
+1 "death.fell.accident.generic": "%1$s fell from a high place",
+1 "death.fell.accident.ladder": "%1$s fell off a ladder",
+1 "death.fell.accident.other_climbable": "%1$s fell while climbing",
+4 "death.fell.accident.scaffolding": "%1$s fell off scaffolding",
+7 "death.fell.accident.twisting_vines": "%1$s fell off some twisting vines",
+
+2 "death.fell.accident.vines": "%1$s fell off some vines",
+7 "death.fell.accident.weeping_vines": "%1$s fell off some weeping vines",
+5 "death.fell.accident.water"
+1 "death.fell.killer": "%1$s was doomed to fall",
+2 "death.fell.assist": "%1$s was doomed to fall by %2$s",
+
+
+5 "death.attack.arrow.item": "%1$s was shot by %2$s using %3$s",
+5 "death.fell.assist.item": "%1$s was doomed to fall by %2$s using %3$s",
+5 "death.attack.mob.item": "%1$s was slain by %2$s using %3$s",
+7 "death.attack.explosion.player.item": "%1$s was blown up by %2$s using %3$s",
+8 "death.attack.fireworks.item": "%1$s went off with a bang due to a firework fired from %3$s by %2$s",
