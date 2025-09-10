@@ -87,6 +87,7 @@ execute as @a[scores={done=3..},tag=!a] run scoreboard players add @e[type=armor
 
 # 	placement points
 execute as @e[type=armor_stand,tag=score,scores={place=1}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"aqua","bold":true,"selector":"@s"},{"bold":false,"text":" has finished in 1st place!"}]
+execute as @e[type=armor_stand,tag=score,scores={place=1}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"gray","text":"<BETA> Time taken in ticks: "},{"score":{"name":"@e[type=armor_stand,tag=score,limit=1]","objective":"scoretick"}}]
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=16..}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 15
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=16..}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a {"text":"Players now have 15 minutes to try and finish before the game ends!","color":"dark_green","bold":true}
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=13..15}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set Time min 13
@@ -108,8 +109,10 @@ execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as
 execute as @e[type=armor_stand,tag=score,scores={place=1}] run execute as @a[scores={done=3..},tag=!a] run scoreboard players set @e[tag=score,type=armor_stand] cd 1
 
 execute as @e[type=armor_stand,tag=score,scores={place=2}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"aqua","bold":true,"selector":"@s"},{"bold":false,"text":" has finished in 2nd place!"}]
+execute as @e[type=armor_stand,tag=score,scores={place=2}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"gray","text":"<BETA> Time taken in ticks: "},{"score":{"name":"@e[type=armor_stand,tag=score,limit=1]","objective":"scoretick"}}]
 
 execute as @e[type=armor_stand,tag=score,scores={place=3}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"aqua","bold":true,"selector":"@s"},{"bold":false,"text":" has finished in 3rd place!"}]
+execute as @e[type=armor_stand,tag=score,scores={place=3}] run execute as @a[scores={done=3..},tag=!a] run tellraw @a [{"color":"gray","text":"<BETA> Time taken in ticks: "},{"score":{"name":"@e[type=armor_stand,tag=score,limit=1]","objective":"scoretick"}}]
 execute as @e[type=armor_stand,tag=score,scores={place=3}] run execute as @a[scores={done=3..},tag=!a] run schedule function a:zzzfinalprint 1s
 
 # 	rest of the stuff
