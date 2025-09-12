@@ -116,9 +116,8 @@
 1 "death.fell.killer": "%1$s was doomed to fall",
 2 "death.fell.assist": "%1$s was doomed to fall by %2$s",
 
-
 5 "death.attack.arrow.item": "%1$s was shot by %2$s using %3$s",
 5 "death.fell.assist.item": "%1$s was doomed to fall by %2$s using %3$s",
 5 "death.attack.mob.item": "%1$s was slain by %2$s using %3$s",
-7 "death.attack.explosion.player.item": "%1$s was blown up by %2$s using %3$s",
+8 "death.attack.explosion.player.item": "%1$s was blown up by %2$s using %3$s",
 8 "death.attack.fireworks.item": "%1$s went off with a bang due to a firework fired from %3$s by %2$s",

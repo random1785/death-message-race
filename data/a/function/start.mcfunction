@@ -29,10 +29,6 @@ scoreboard players set @e[type=armor_stand,tag=score,limit=1] ex 1
 execute unless score Time mode matches 1..20 run function a:zzznomode
 
 
-# give bonus items
-schedule function a:zzzd2bonus 120t
-
-
 
 gamerule announceAdvancements false
 

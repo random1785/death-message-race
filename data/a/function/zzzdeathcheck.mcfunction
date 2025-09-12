@@ -278,8 +278,8 @@ execute as @a[scores={death=18..,ca=18},gamemode=survival] run scoreboard player
 execute as @a[scores={death=18..,cb=18},gamemode=survival] run scoreboard players add @s score 5
 execute as @a[scores={death=18..,cb=18},gamemode=survival] run tellraw @a [{"color":"gold","bold":true,"selector":"@s"},{"bold":false,"text":" has added 5 points to their score, which is now "},{"score":{"name":"@s","objective":"score"}},{"text":".","bold":false}]
 execute as @a[scores={death=18..,cb=18},gamemode=survival] run scoreboard players add @s cb 1
-execute as @a[scores={death=18..,cc=18},gamemode=survival] run scoreboard players add @s score 7
-execute as @a[scores={death=18..,cc=18},gamemode=survival] run tellraw @a [{"color":"gold","bold":true,"selector":"@s"},{"bold":false,"text":" has added 7 points to their score, which is now "},{"score":{"name":"@s","objective":"score"}},{"text":".","bold":false}]
+execute as @a[scores={death=18..,cc=18},gamemode=survival] run scoreboard players add @s score 8
+execute as @a[scores={death=18..,cc=18},gamemode=survival] run tellraw @a [{"color":"gold","bold":true,"selector":"@s"},{"bold":false,"text":" has added 8 points to their score, which is now "},{"score":{"name":"@s","objective":"score"}},{"text":".","bold":false}]
 execute as @a[scores={death=18..,cc=18},gamemode=survival] run scoreboard players add @s cc 1
 execute as @a[scores={death=18..,cd=18},gamemode=survival] run scoreboard players add @s score 8
 execute as @a[scores={death=18..,cd=18},gamemode=survival] run tellraw @a [{"color":"gold","bold":true,"selector":"@s"},{"bold":false,"text":" has added 8 points to their score, which is now "},{"score":{"name":"@s","objective":"score"}},{"text":".","bold":false}]

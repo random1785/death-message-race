@@ -41,9 +41,12 @@ scoreboard objectives add pcount dummy
 scoreboard objectives add tpcount dummy
 scoreboard objectives add x dummy
 scoreboard objectives add z dummy
+scoreboard objectives add k dummy
+scoreboard objectives add l dummy
 scoreboard objectives add d dummy
 scoreboard objectives add place dummy
 scoreboard objectives add rounds dummy
+scoreboard objectives add bonus dummy
 scoreboard objectives add twok dummy
 scoreboard objectives add glass minecraft.mined:minecraft.glass
 scoreboard objectives add echo minecraft.used:minecraft.echo_shard
