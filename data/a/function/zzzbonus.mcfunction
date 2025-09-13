@@ -1,8 +1,8 @@
-execute store result score @e[type=armor_stand,tag=score] k run random value 1..28
+execute store result score @e[type=armor_stand,tag=score] k run random value 1..26
 execute as @e[type=armor_stand,tag=score] run scoreboard players remove @s bonus 1
 execute as @a at @s run playsound minecraft:block.note_block.pling
 execute as @e[type=armor_stand,tag=score,scores={k=1}] run tellraw @a {"color":"dark_green","text":"bonus recieved: bamboo!"}
-execute as @e[type=armor_stand,tag=score,scores={k=1}] run give @a bamboo 6
+execute as @e[type=armor_stand,tag=score,scores={k=1}] run give @a bamboo
 execute as @e[type=armor_stand,tag=score,scores={k=2}] run tellraw @a {"color":"dark_green","text":"bonus recieved: sweet berries!"}
 execute as @e[type=armor_stand,tag=score,scores={k=2}] run give @a sweet_berries 1
 execute as @e[type=armor_stand,tag=score,scores={k=3}] run tellraw @a {"color":"dark_green","text":"bonus recieved: vines!"}
@@ -53,10 +53,6 @@ execute as @e[type=armor_stand,tag=score,scores={k=25}] run tellraw @a {"color":
 execute as @e[type=armor_stand,tag=score,scores={k=25}] run give @a golden_axe[minecraft:enchantments={efficiency:5}]
 execute as @e[type=armor_stand,tag=score,scores={k=26}] run tellraw @a {"color":"green","text":"bonus recieved: fast shovel!"}
 execute as @e[type=armor_stand,tag=score,scores={k=26}] run give @a golden_shovel[minecraft:enchantments={efficiency:5}]
-execute as @e[type=armor_stand,tag=score,scores={k=27}] run tellraw @a {"color":"green","text":"bonus recieved: crossbow!"}
-execute as @e[type=armor_stand,tag=score,scores={k=27}] run give @a crossbow[minecraft:unbreakable={true:1b},minecraft:enchantment_glint_override=true]
-execute as @e[type=armor_stand,tag=score,scores={k=28}] run tellraw @a {"color":"green","text":"bonus recieved: bow!"}
-execute as @e[type=armor_stand,tag=score,scores={k=28}] run give @a bow[minecraft:unbreakable={true:1b},minecraft:enchantment_glint_override=true]
 
 execute as @e[type=armor_stand,tag=score,scores={bonus=1..}] run schedule function a:zzzbonus 20t
 execute as @e[type=armor_stand,tag=score,scores={bonus=..0}] run schedule function a:zzzstart3 40t
