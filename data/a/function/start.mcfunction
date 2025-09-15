@@ -1,6 +1,7 @@
 scoreboard players reset @a
 tag @e remove newcheck
 tag @e remove final
+tag @e remove whydoesthishappen
 gamerule doImmediateRespawn true
 clear @a
 weather clear
@@ -18,6 +19,7 @@ effect clear @a
 kill @a
 tag @a remove a
 execute as @a at @s run playsound minecraft:block.trial_spawner.ominous_activate
+execute positioned 0.5 301.0 0.5 run playsound minecraft:block.trial_spawner.ominous_activate
 title @a title {"text":"game starting!","color":"green"}
 schedule function a:zzzstart1 20t
 schedule function a:zzzcheck 6t
@@ -25,8 +27,6 @@ schedule function a:zzzcheck1 10t
 gamemode survival @a
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] two 2
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] ex 1
-
-execute unless score Time mode matches 1..20 run function a:zzznomode
 
 
 

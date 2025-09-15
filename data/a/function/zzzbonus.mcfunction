@@ -4,7 +4,7 @@ execute as @a at @s run playsound minecraft:block.note_block.pling
 execute as @e[type=armor_stand,tag=score,scores={k=1}] run tellraw @a {"color":"dark_green","text":"bonus recieved: bamboo!"}
 execute as @e[type=armor_stand,tag=score,scores={k=1}] run give @a bamboo
 execute as @e[type=armor_stand,tag=score,scores={k=2}] run tellraw @a {"color":"dark_green","text":"bonus recieved: sweet berries!"}
-execute as @e[type=armor_stand,tag=score,scores={k=2}] run give @a sweet_berries 1
+execute as @e[type=armor_stand,tag=score,scores={k=2}] run give @a sweet_berries
 execute as @e[type=armor_stand,tag=score,scores={k=3}] run tellraw @a {"color":"dark_green","text":"bonus recieved: vines!"}
 execute as @e[type=armor_stand,tag=score,scores={k=3}] run give @a vine
 execute as @e[type=armor_stand,tag=score,scores={k=4}] run tellraw @a {"color":"dark_green","text":"bonus recieved: cactus!"}

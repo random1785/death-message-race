@@ -48,24 +48,35 @@ scoreboard objectives add place dummy
 scoreboard objectives add rounds dummy
 scoreboard objectives add bonus dummy
 scoreboard objectives add twok dummy
+scoreboard objectives add Sneaking dummy
 scoreboard objectives add glass minecraft.mined:minecraft.glass
 scoreboard objectives add echo minecraft.used:minecraft.echo_shard
+scoreboard objectives add SneakTime minecraft.custom:minecraft.sneak_time
 scoreboard objectives add death deathCount
 scoreboard players set @a death 1785
 scoreboard players set @a lobby 1785
+scoreboard players set Time mode 4
 scoreboard objectives setdisplay sidebar score
 scoreboard objectives setdisplay list
-tellraw @a {"text":"Death Message Race has been loaded! Please use /trigger mode set <value> to set the game type, and then use /function a:start to begin!","color":"green"}
+tellraw @a {"text":"Death Message Race has been loaded! Please use the platform located past the north wall to begin the game!","color":"green"}
 
 # create spawn platform
 schedule function a:zzzspawn 5t
 schedule function a:zzzcheck 6t
 schedule function a:zzzcheck1 10t
 execute in the_nether run forceload add -13 -14 25 24
-place template a:lobbyoverworld1 -12 295 -14
+place template a:lobbyoverworld3v2 -12 294 -12
+fillbiome -11 298 -11 33 319 12 minecraft:cherry_grove
 setworldspawn 0 302 0
 spawnpoint @a 0 302 0
 forceload add -1 -1 0 0
+
+
+# cool point setting
+kill @e[type=block_display]
+kill @e[type=interaction]
+place template a:lobbypointsetting -3 300 -17
+
 
 # TEXT DISPLAYS
 kill @e[type=text_display]

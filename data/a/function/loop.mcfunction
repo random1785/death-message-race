@@ -143,3 +143,19 @@ execute as @e[type=minecraft:armor_stand,tag=score,scores={scoretick=-199}] at @
 execute as @e[type=minecraft:armor_stand,tag=score,scores={scoretick=-19}] at @s if entity @a[distance=..35,gamemode=survival] run function a:zzzbotched
 # glass break detection
 execute as @e[type=minecraft:armor_stand,tag=score,scores={scoretick=-240..-1}] at @s if entity @a[scores={glass=1..}] run function a:zzzglass
+
+
+
+# cool point setting
+execute as @e[type=interaction,tag=Dec] if data entity @s attack on attacker if entity @s[scores={Sneaking=0}] if score Time mode matches 2..20 run scoreboard players remove Time mode 1
+execute as @e[type=interaction,tag=Dec] if data entity @s attack on attacker if entity @s[scores={Sneaking=0}] run tellraw @a [{"text":"The game has been set to "},{"color":"dark_green","score":{"name":"Time","objective":"mode"}},{"text":"0 points!","color":"dark_green"}," (Decreased by 10)"]
+execute as @e[type=interaction,tag=Dec] if data entity @s attack on attacker if entity @s[scores={Sneaking=1..}] if score Time mode matches 6..20 run scoreboard players remove Time mode 5
+execute as @e[type=interaction,tag=Dec] if data entity @s attack on attacker if entity @s[scores={Sneaking=1..}] run tellraw @a [{"text":"The game has been set to "},{"color":"dark_green","score":{"name":"Time","objective":"mode"}},{"text":"0 points!","color":"dark_green"}," (Decreased by 50)"]
+execute as @e[type=interaction,tag=Dec] if data entity @s attack run data remove entity @s attack
+execute as @e[type=interaction,tag=Inc] if data entity @s attack on attacker if entity @s[scores={Sneaking=0}] if score Time mode matches 1..19 run scoreboard players add Time mode 1
+execute as @e[type=interaction,tag=Inc] if data entity @s attack on attacker if entity @s[scores={Sneaking=0}] run tellraw @a [{"text":"The game has been set to "},{"color":"dark_green","score":{"name":"Time","objective":"mode"}},{"text":"0 points!","color":"dark_green"}," (Increased by 10)"]
+execute as @e[type=interaction,tag=Inc] if data entity @s attack on attacker if entity @s[scores={Sneaking=1..}] if score Time mode matches 1..15 run scoreboard players add Time mode 5
+execute as @e[type=interaction,tag=Inc] if data entity @s attack on attacker if entity @s[scores={Sneaking=1..}] run tellraw @a [{"text":"The game has been set to "},{"color":"dark_green","score":{"name":"Time","objective":"mode"}},{"text":"0 points!","color":"dark_green"}," (Increased by 50)"]
+execute as @e[type=interaction,tag=Inc] if data entity @s attack run data remove entity @s attack
+execute as @a run scoreboard players operation @s Sneaking = @s SneakTime
+scoreboard players set @a SneakTime 0
