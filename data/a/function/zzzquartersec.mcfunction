@@ -2,7 +2,7 @@
 gamemode spectator @a[scores={zzzforefit=1..},tag=!a]
 execute as @a[scores={zzzforefit=1..},tag=!a] run tellraw @a [{"selector":"@s","color":"dark_red"},{"text":" has forfeited."}]
 execute if entity @a[scores={zzzforefit=1..},tag=!a] run execute as @a at @s run playsound minecraft:block.pointed_dripstone.land
-execute as @a[scores={zzzforefit=1..},tag=!a] run execute unless entity @a[gamemode=survival,scores={score=0..}] run schedule function a:zzzfinalprint 1s
+execute as @a[scores={zzzforefit=1..},tag=!a] run execute unless entity @a[gamemode=survival,tag=!a] run schedule function a:zzzfinalprint 1s
 tag @a[scores={zzzforefit=1..},tag=!a] add a
 
 execute as @a[scores={mode=..-1}] run tellraw @s {"color":"dark_red","text":"That is not a valid mode value! As a reminder, the mode value times 10 is the target score for the game!"}
@@ -73,9 +73,9 @@ execute as @e[type=armor_stand,tag=score,scores={place=1,mode=10..12}] run execu
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=8..9}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 8
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=6..7}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 7
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=4..5}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 5
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 3
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 2
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 1
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 4
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 3
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set Time min 2
 
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=16..}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"15","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=13..15}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"13","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
