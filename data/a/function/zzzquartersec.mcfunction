@@ -83,9 +83,9 @@ execute as @e[type=armor_stand,tag=score,scores={place=1,mode=10..12}] run execu
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=8..9}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"8","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=6..7}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"7","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
 execute as @e[type=armor_stand,tag=score,scores={place=1,mode=4..5}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"5","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"3","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"2","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
-execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"1","bold":true,"underlined":true},{"text":" minute to try and finish before the game ends!"}]
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=3}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"4","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=2}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"3","bold":true,"underlined":true},{"text":" minutes to try and finish before the game ends!"}]
+execute as @e[type=armor_stand,tag=score,scores={place=1,mode=1}] run execute as @a[scores={done=3},tag=!a] run tellraw @a [{"color":"dark_green","text":"Players now have "},{"text":"2","bold":true,"underlined":true},{"text":" minute to try and finish before the game ends!"}]
 
 execute as @e[type=armor_stand,tag=score,scores={place=1}] run execute as @a[scores={done=3},tag=!a] run scoreboard players set @e[tag=score,type=armor_stand] cd 1
 
@@ -101,5 +101,6 @@ tag @a[scores={done=3},tag=!a] add a
 execute as @a[scores={done=3},tag=!whydoesthishappen] run execute unless entity @a[gamemode=survival,tag=!a] run schedule function a:zzzfinalprint 5s
 execute as @a[scores={done=3}] run tag @s add whydoesthishappen
 execute as @a[scores={done=3}] run scoreboard players add @s done 1
+
 
 schedule function a:zzzquartersec 2t
