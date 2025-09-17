@@ -19,10 +19,7 @@ Players who join midway will be put in spectator for the current round and allow
 PvP is disabled and sabotaging other players is frowned upon but is impossible to enforce in the datapack itself.
 
 ## Known bugs and stuff to do
-NEW LOBBY!!! <br>
-zim made a cool system for starting the game <br>
-game doesnt actually end when theres nobody left skull <br>
-Players leaving can sometimes end the game <br>
+not that i know of but we might find some soon!
 
 
 
