@@ -1,5 +1,5 @@
 # death-message-race
-Minecraft Datapack where players need to race each other to get different death messages! Works on 1.21.5+ unless they update the command syntax. 
+Minecraft Datapack where players need to race each other to get different death messages! Works on 1.21.5-1.21.7. 
 
 ## Features
 The game is started with /trigger mode set <value>, which sets the game to 10*value points. <br>
